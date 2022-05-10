@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For loops</h1>
+    <table border="1px">
+        <tr>
+            <th>SUBJECT</th>
+            <th>MARKS</th>
+            <th>STATUS</th>
+        </tr>
+        {% for key, value in data.items() %}
+            <tr>
+                <td> {{ key }} </td>
+                <td> {{ value }} </td>
+                <td>
+                    {% if value > 50 %}
+                        PASS
+                    {% else %}
+                        FAIL
+                    {% endif %}
+                </td>
+            </tr>
+            
+        {% endfor %}
+    </table>
+
+</body>
+</html>
