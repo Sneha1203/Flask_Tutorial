@@ -2,7 +2,7 @@ from distutils.command.upload import upload
 from flask import render_template, request
 import os
 
-UPLOAD_FOLDER = 'static/uploads/'
+UPLOAD_FOLDER = 'File Upload/static/uploads/'
 
 def index():
     if request.method == 'POST':
